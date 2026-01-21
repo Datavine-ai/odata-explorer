@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Datavine Font Imports - using system fallbacks if custom fonts not available */
+/* To use actual PP fonts, add @font-face declarations or link from a CDN */
+
+/* Prevent page scrolling - app fills viewport */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+#app {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Datavine Brand Styles */
+@layer components {
+  /* Header styling with brand font */
+  .dv-title {
+    @apply font-editorial text-2xl font-bold tracking-tight;
+  }
+
+  .dv-subtitle {
+    @apply font-mono text-sm text-base-content/70;
+  }
+
+  /* Branded card with cream background and subtle border */
+  .dv-card {
+    @apply bg-base-100 border border-base-300 rounded-lg shadow-sm;
+  }
+
+  /* Accent highlight for important items */
+  .dv-accent-badge {
+    @apply bg-accent text-accent-content px-2 py-0.5 rounded text-xs font-mono;
+  }
+
+  /* Forest green badge for entities */
+  .dv-primary-badge {
+    @apply bg-primary text-primary-content px-2 py-0.5 rounded text-xs font-mono;
+  }
+}
+
+/* Custom scrollbar styling for Datavine theme */
+@layer utilities {
+  .scrollbar-datavine::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar-datavine::-webkit-scrollbar-track {
+    @apply bg-base-200 rounded;
+  }
+
+  .scrollbar-datavine::-webkit-scrollbar-thumb {
+    @apply bg-primary/30 rounded hover:bg-primary/50;
+  }
+}
