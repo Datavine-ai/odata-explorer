@@ -2,6 +2,8 @@
 
 An interactive web application for visualizing and exploring OData v4 metadata (EDMX) documents. Built by [Datavine](https://datavine.com).
 
+![OData Metadata Viewer Screenshot](screenshot.png)
+
 ## Features
 
 - **Multiple Input Methods** - Paste XML directly, fetch from URL, upload files, or load sample data
