@@ -138,4 +138,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## Acknowledgments
 
-Built with care by the team at [Datavine](https://datavine.com).
+Built with care by the team at [Datavine](https://datavine.com), with the help of [OpenCode](https://opencode.ai).
